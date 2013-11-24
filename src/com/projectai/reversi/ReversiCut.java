@@ -29,7 +29,7 @@ public class ReversiCut {
 		return moves;
 	}
 
-	public static Position GetNextMove(GameState gameState,
+	public static Position getNextMove(GameState gameState,
 			GameStage gameStage, int depth) {
 		GameState[] child = getReachableGameStates(gameState, 2);
 		Position nextMove = null;

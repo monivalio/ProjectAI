@@ -11,8 +11,8 @@ public class Program {
         GameState gameState = ReversiCut.createGameBoard(gameStateStr);
         int[][] board = gameState.board;
         int remainMoves = ReversiCut.getRemainingMoves(board);
-        Position nextMove = remainMoves < 9 ? ReversiCut.GetNextMove(gameState, GameStage.EndGameState, remainMoves) :
-            ReversiCut.GetNextMove(gameState, GameStage.StartGameStage, remainMoves);
+        Position nextMove = remainMoves < 9 ? ReversiCut.getNextMove(gameState, GameStage.EndGameState, remainMoves) :
+            ReversiCut.getNextMove(gameState, GameStage.StartGameStage, remainMoves);
         System.out.println((char)('A' + nextMove.getY()) + "" + (char)('1' + nextMove.getX()));    
 	}
 
